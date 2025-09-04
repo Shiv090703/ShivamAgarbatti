@@ -1,0 +1,160 @@
+﻿/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Flexbox for Left-Right Layout */
+.zodiac-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Zodiac Table Styling (Left Side) */
+.zodiac-table {
+    flex: 1;
+    background: #fff7e6;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.zodiac-table:hover {
+    transform: scale(1.02);
+}
+
+.zodiac-table h2 {
+    color: #d35400;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Styling */
+.zodiac-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.zodiac-table th, .zodiac-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+
+.zodiac-table th {
+    background: #ff7b00;
+    color: white;
+    font-weight: bold;
+}
+
+.zodiac-img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.zodiac-img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Recommendation Section (Right Side) */
+.recommendation {
+    flex: 1;
+    background: linear-gradient(135deg, #ffcc80, #ff9800);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recommendation:hover {
+    transform: scale(1.02);
+}
+
+.recommendation h2 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Date Picker & Button */
+.date-picker {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.date-picker:focus {
+    border-color: #ff6f00;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.7);
+    outline: none;
+}
+
+.recommendation-btn {
+    background: #ff6f00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.recommendation-btn:hover {
+    background: #e65100;
+    box-shadow: 0 0 12px rgba(255, 193, 7, 0.7);
+}
+
+/* Result Labels with Magic Glow */
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#lblZodiacSign, #lblFragrance {
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+/* Magical Glow Effect When Result Appears */
+#lblZodiacSign.active, #lblFragrance.active {
+    color: #ffeb3b;
+    text-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .zodiac-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .zodiac-table, .recommendation {
+        width: 100%;
+    }
+}
+
+}

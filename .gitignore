@@ -1,0 +1,27 @@
+# Build folders
+bin/
+obj/
+Debug/
+Release/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+
+# Visual Studio
+.vs/
+
+# Publish profiles
+*.Publish.xml
+*.pubxml
+*.pubxml.user
+
+# Ignore database files
+App_Data/*.mdf
+App_Data/*.ldf

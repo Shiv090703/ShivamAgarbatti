@@ -1,0 +1,55 @@
+﻿toggle-button {
+
+        display: none; /* Hide the default checkbox appearance */
+
+    }
+
+
+
+    .toggle-button-label {
+
+        position: relative;
+
+        padding: 10px 20px;
+
+        cursor: pointer;
+
+        background-color: #ccc;
+
+        border-radius: 20px;
+
+    }
+
+
+
+    .toggle-button-label::before {
+
+        content: "";
+
+        position: absolute;
+
+        left: 0;
+
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        width: 30px;
+
+        height: 30px;
+
+        background-color: #fff;
+
+        border-radius: 50%;
+
+        transition: transform 0.3s ease;
+
+    }
+
+
+
+    .toggle-button:checked + .toggle-button-label::before {
+
+        transform: translateX(20px) translateY(-50%);
+
+    }
